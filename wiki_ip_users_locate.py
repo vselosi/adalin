@@ -29,7 +29,7 @@ def getHistoryIPs(pageUrl):
 
 def getCountry(ipAddress):
     try:
-        response = urlopen("http://api.ipstack.com/"+ipAddress+"?access_key=YOUR_TOKEN").read().decode('utf-8')
+        response = urlopen("http://api.ipstack.com/"+ipAddress+"?access_key=45b595600870cda553b4d9b6316dcb40").read().decode('utf-8')
     except HTTPError:
         return None
     responseJson = json.loads(response)
