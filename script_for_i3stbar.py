@@ -8,7 +8,7 @@ import os
 os.system("setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift_toggle'")
 def getWeather():
     try:
-        response = urlopen("https://api.openweathermap.org/data/2.5/find?q=Dnipro,ua&units=metric&appid=a70ee5d5fa84c2cdb4ecec3d455dfcc5").read().decode('utf-8')
+        response = urlopen("https://api.openweathermap.org/data/2.5/find?q=Dnipro,ua&units=metric&appid=APITOKEN").read().decode('utf-8')
     except URLError:
         return print("Connection failed!")
     responseJson = json.loads(response)
