@@ -4,6 +4,7 @@ from urllib.request import urlopen
 import json
 import time
 import os
+import sys
 
 os.system("setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift_toggle'")
 def getWeather():
@@ -31,4 +32,5 @@ def getCourse():
 
 while True:
  print(getCourse(), getWeather())
+ sys.stdout.flush()
  time.sleep(60)
