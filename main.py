@@ -12,7 +12,7 @@ app = Flask(__name__)
 SSLify = SSLify(app)
 
 
-URL = 'https://api.telegram.org/bot850923986:AAEoP6rdCMRC2w4JQv5lfQ-tFxd2JiFsV6g/'
+URL = 'https://api.telegram.org/botYourAPItokenforTG/'
 
 """
 def write_json(r, filename='answer.json'):
@@ -29,7 +29,7 @@ def get_json_data():
     }
     headers = {
       'Accepts': 'application/json',
-      'X-CMC_PRO_API_KEY': 'b0533756-6967-4189-8103-54958facfcfe',
+      'X-CMC_PRO_API_KEY': 'YourAPItokenforCoinmarketcap',
     }
     session = Session()
     session.headers.update(headers)
