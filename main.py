@@ -47,7 +47,7 @@ def workable_data(json_ob):
     return data
 
 
-def make_dickt(data):
+def make_dict(data):
     dict = {}
     for i in data:
         name = i["name"]
@@ -78,7 +78,7 @@ def index():
         message = r['message']['text']
         json_ob = get_json_data()
         data = workable_data(json_ob)
-        dict = make_dickt(data)
+        dict = make_dict(data)
         price = parse_dict(dict, message)
         send_message(chat_id, text=price)
 
