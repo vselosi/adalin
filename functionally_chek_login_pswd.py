@@ -5,10 +5,8 @@ passwd_db = pwd.getpwall()
 
 
 def erroruser():
-    
     erroruser = []
     global passwd_db
-    
     try:
         for entry in passwd_db:
             username = entry[0]
@@ -21,11 +19,9 @@ def erroruser():
 
 
 
-def errorpass():
-    
+def errorpass():  
     errorpass = []
     global passwd_db
-    
     try:
         for entry in passwd_db:
             password = entry[0]
