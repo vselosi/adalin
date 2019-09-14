@@ -2,7 +2,7 @@ from file_checksum_md5 import create_checksum
 from dir_traversal_module import diskwalk
 from os.path import getsize
 
-path = '/root/Documents/System_admin'
+path = '/your/path'
 
 def findDupes(path=path):
     dup = []
