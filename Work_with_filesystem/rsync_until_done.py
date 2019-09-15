@@ -5,8 +5,8 @@ import smtplib
 
 #this code will try synchronize 2 dirs, until done!
 
-source = '/tmp/sync_dir_A/' #Note the trailing slash
-target = '/tmp/sync_dir_B'
+source = '/path/to/sync_dir_A/' #Note the trailing slash
+target = '/path/to/sync_dir_B'
 rsync = 'rsync'
 arguments = '-av'
 cmd = '%s %s %s %s' % (rsync, arguments, source, target)
@@ -22,10 +22,10 @@ def sync():
             print 'rsync was succesful'
             port = 465
             smtp_server = 'smtp.gmail.com'
-            sender_email = 'romadnestr@gmail.com'
-            receiver_email = 'adalllinincorp@gmail.com'
-            password = 'byjq1234gfhjkmxbr'
-            message = 'Message from vselosi.'
+            sender_email = 'sender@gmail.com'
+            receiver_email = 'receiver@gmail.com'
+            password = 'yourpswd'
+            message = 'Your message text here.'
             
     
             server = smtplib.SMTP_SSL(smtp_server, port) 
