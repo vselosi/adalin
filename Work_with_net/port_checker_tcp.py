@@ -28,6 +28,5 @@ if __name__ == '__main__':
     check = check_server(options.address, options.port)
     print 'check_server returned %s' % check
     sys.exit(not check)
-        
- 
+#usege example: python port_checker_tcp.py --address www.google.com --port 80; echo 'SUCCESS'  
        
