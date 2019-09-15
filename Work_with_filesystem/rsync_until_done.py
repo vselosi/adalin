@@ -3,7 +3,8 @@ import sys
 import time
 import smtplib
 
-#this code will try synchronize 2 dirs, until done!
+#this code will try synchronize 2 dirs, until it done and send message on your gmail
+#youhave to allow access for this app in your google account setings
 
 source = '/path/to/sync_dir_A/' #Note the trailing slash
 target = '/path/to/sync_dir_B'
