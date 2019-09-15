@@ -42,7 +42,7 @@ class Delete(object):
     
 if __name__ == '__main__':
     from duplicate_search import findDupes
-    dupes = findDupes('/root/Documents/System_admin')
+    dupes = findDupes('/your/path')
     for dupe in dupes:
         delete = Delete(dupe)
         #delete.dryrun()
