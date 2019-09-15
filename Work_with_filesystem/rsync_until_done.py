@@ -22,10 +22,10 @@ def sync():
             print 'rsync was succesful'
             port = 465
             smtp_server = 'smtp.gmail.com'
-            sender_email = 'romadnestr@gmail.com'
-            receiver_email = 'adalllinincorp@gmail.com'
-            password = 'byjq1234gfhjkmxbr'
-            message = 'Message from vselosi.'
+            sender_email = 'sender@gmail.com'
+            receiver_email = 'receiver@gmail.com'
+            password = 'your&pswd'
+            message = 'Your message.'
             
     
             server = smtplib.SMTP_SSL(smtp_server, port) 
